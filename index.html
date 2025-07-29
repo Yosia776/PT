@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT Y&V Bites - Kelezatan di Setiap Gigitan</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-birthday-cake"></i>
+                Y&V Bites
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#products">Produk</a></li>
+                <li><a href="#register">Daftar</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>PT Y&V Bites</h1>
+            <p>Kelezatan di Setiap Gigitan - Kue Premium & Makanan Berkualitas</p>
+            <div class="cta-buttons">
+                <a href="#products" class="btn btn-primary">
+                    <i class="fas fa-shopping-cart"></i>
+                    Lihat Produk
+                </a>
+                <a href="#register" class="btn btn-secondary">
+                    <i class="fas fa-user-plus"></i>
+                    Daftar Member
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tentang Y&V Bites</h2>
+                <p>Menyajikan kelezatan terbaik dengan bahan berkualitas tinggi dan resep tradisional yang telah disempurnakan</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Komitmen Kami</h3>
+                    <p>PT Y&V Bites adalah perusahaan F&B yang berkomitmen menghadirkan pengalaman kuliner terbaik melalui produk kue dan makanan berkualitas premium.</p>
+                    <p>Setiap produk kami dibuat dengan penuh cinta dan perhatian terhadap detail, menggunakan bahan-bahan pilihan terbaik.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <div>
+                                <h4>Bahan Alami</h4>
+                                <p>100% bahan berkualitas</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Dibuat dengan Cinta</h4>
+                                <p>Perhatian pada setiap detail</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>Kualitas Premium</h4>
+                                <p>Standar internasional</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Fresh Daily</h4>
+                                <p>Selalu segar setiap hari</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section products" id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Produk Unggulan</h2>
+                <p>Berbagai pilihan kue dan makanan lezat yang siap memanjakan lidah Anda</p>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="section register" id="register">
+        <div class="container">
+            <div class="section-title">
+                <h2>Daftar Sebagai Member</h2>
+                <p>Daftar untuk mendapatkan penawaran khusus dan pengalaman belanja yang lebih personal</p>
+            </div>
+            
+            <div class="register-content">
+                <div class="register-benefits">
+                    <h3>Keuntungan Member Y&V Bites</h3>
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <i class="fas fa-gift"></i>
+                            <div>
+                                <h4>Diskon Khusus</h4>
+                                <p>Dapatkan diskon hingga 15% untuk pembelian tertentu</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-birthday-cake"></i>
+                            <div>
+                                <h4>Birthday Surprise</h4>
+                                <p>Voucher special di hari ulang tahun Anda</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-bell"></i>
+                            <div>
+                                <h4>Info Produk Terbaru</h4>
+                                <p>Dapatkan informasi produk dan promo terdepan</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-star"></i>
+                            <div>
+                                <h4>Priority Service</h4>
+                                <p>Layanan prioritas untuk pesanan custom</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="register-form-container">
+                    <form class="register-form" id="registerForm">
+                        <h3>Form Pendaftaran</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="regName">Nama Lengkap *</label>
+                                <input type="text" id="regName" name="name" placeholder="Masukkan nama lengkap" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="regEmail">Email *</label>
+                                <input type="email" id="regEmail" name="email" placeholder="ynvbites1106@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="regPhone">Nomor Telepon *</label>
+                                <input type="tel" id="regPhone" name="phone" placeholder="+62 856-1724-985" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="regAddress">Alamat Lengkap</label>
+                            <textarea id="regAddress" name="address" rows="3" placeholder="Jalan, RT/RW, Kelurahan"></textarea>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="regCity">Kota</label>
+                                <input type="text" id="regCity" name="city" placeholder="Bogor">
+                            </div>
+                            <div class="form-group">
+                                <label for="regPostal">Kode Pos</label>
+                                <input type="text" id="regPostal" name="postal_code" placeholder="16111">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="agreeTerms" required>
+                                <span class="checkmark"></span>
+                                Saya setuju dengan <a href="#" class="terms-link">syarat dan ketentuan</a>
+                            </label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="subscribeNewsletter">
+                                <span class="checkmark"></span>
+                                Saya ingin menerima newsletter dan penawaran khusus
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-register">
+                            <i class="fas fa-user-plus"></i>
+                            Daftar Sekarang
+                        </button>
+                        
+                        <p class="register-note">
+                            Data Anda aman dan tidak akan dibagikan kepada pihak ketiga
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hubungi Kami</h2>
+                <p>Siap melayani Anda dengan sepenuh hati. Hubungi kami untuk pemesanan atau informasi lebih lanjut</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informasi Kontak</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Alamat</h4>
+                            <p>Jl. Raya Bogor No. 123<br>Bogor, Jawa Barat 16111</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telepon</h4>
+                            <p>+62 856-1724-985</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@ynvbites.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Jam Operasional</h4>
+                            <p>Senin - Sabtu: 08:00 - 20:00<br>Minggu: 09:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Kirim Pesan</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="ynvbites1106@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Nomor Telepon</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+62 856-1724-985" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subjek</label>
+                            <input type="text" id="subject" name="subject" placeholder="Subjek pesan Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/628561724985?text=Halo%20PT%20Y%26V%20Bites,%20saya%20ingin%20bertanya%20tentang%20produk%20Anda" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PT Y&V Bites</h3>
+                    <p>Kelezatan di setiap gigitan. Kami berkomitmen menghadirkan produk F&B berkualitas premium untuk keluarga Indonesia.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://wa.me/628561724985" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Gang Duri 3 Tapos</p>
+                    <p><i class="fas fa-phone"></i> +62 856-1724-985</p>
+                    <p><i class="fas fa-envelope"></i> info@ynvbites.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PT Y&V Bites. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    src="{{ url_for('static', filename='script.js') }}"></script>
+>
+</body>
+</html>
