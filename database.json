@@ -1,0 +1,64 @@
+{
+  "customers": [],
+  "orders": [],
+  "products": [
+    {
+      "id": 1,
+      "name": "Custom Birthday Cake",
+      "price": 150000,
+      "category": "cake",
+      "description": "Kue ulang tahun custom dengan berbagai rasa dan desain sesuai keinginan Anda",
+      "image": "birthday-cake.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Premium Cookies",
+      "price": 25000,
+      "category": "cookies",
+      "description": "Koleksi cookies premium dengan berbagai varian rasa",
+      "image": "cookies.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Artisan Bread",
+      "price": 35000,
+      "category": "bread",
+      "description": "Roti artisan segar dengan berbagai varian",
+      "image": "bread.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Cheese Cake Series",
+      "price": 45000,
+      "category": "cake",
+      "description": "Koleksi cheesecake premium dengan berbagai topping",
+      "image": "cheesecake.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Pastry & Desserts",
+      "price": 15000,
+      "category": "dessert",
+      "description": "Aneka pastry dan dessert premium",
+      "image": "pastry.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Corporate Packages",
+      "price": 500000,
+      "category": "package",
+      "description": "Paket khusus untuk acara corporate dan event besar",
+      "image": "corporate.jpg"
+    }
+  ],
+  "settings": {
+    "company_name": "PT Y&V Bites",
+    "phone": "+62 812-3456-7890",
+    "email": "info@ynvbites.com",
+    "address": "Jl. Raya Bogor No. 123, Bogor, Jawa Barat 16111",
+    "operating_hours": {
+      "weekdays": "08:00 - 20:00",
+      "weekend": "09:00 - 18:00"
+    }
+  }
+}
